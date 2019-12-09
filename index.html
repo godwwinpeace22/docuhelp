@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Documentation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+
+  <script src="dist/docuhelp.js"></script>
+
+  <script>
+    let opts = {
+      headerText: 'Instant Answers',
+      sortOptions: {
+        order: 'desc',
+        sort_field: 'title'
+      },
+      articles: {}
+    }
+
+    let docuHelp = new DocuHelp(opts)
+    
+    setTimeout(() => docuHelp.mount(), 1000)
+    // setTimeout(() => docuHelp.mount(), 5000)
+    // setTimeout(() => docuHelp.destroy(), 10000)
+    // setTimeout(() => docuHelp.closeWidget(), 6000)
+    // docuHelp.mount()
+  </script>
+</body>
+</html>

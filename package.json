@@ -1,0 +1,36 @@
+{
+  "name": "docuhelp",
+  "version": "0.0.1",
+  "description": "self service knowledgebase software",
+  "main": "dist/docuhelp.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "serve": "webpack-dev-server",
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/godwwinpeace22/docuhelp.git"
+  },
+  "keywords": [
+    "knowledgebase",
+    "opensource",
+    "documentation",
+    "self-service"
+  ],
+  "author": "godwin gabriel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/godwwinpeace22/docuhelp/issues"
+  },
+  "homepage": "https://github.com/godwwinpeace22/docuhelp#readme",
+  "dependencies": {
+    "markdown-it": "^10.0.0",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "devDependencies": {
+    "fuse.js": "^3.4.6",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
