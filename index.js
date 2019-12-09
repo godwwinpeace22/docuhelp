@@ -258,7 +258,6 @@ function DocuHelp (opts){
   
 }
 
-window.DocuHelp = DocuHelp
 module.exports = DocuHelp
 
 

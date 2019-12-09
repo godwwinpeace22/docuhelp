@@ -14,7 +14,7 @@ $ npm install docuhelp --save
 ```
 
 ##### CDN
-[cdn](htts://unpkg.com/docuhelp/dist/), then include the script tags
+[cdn](https://unpkg.com/docuhelp/dist/), then include the script tags
 
 
 ## Usage
