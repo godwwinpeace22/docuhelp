@@ -1,23 +1,34 @@
-// Webpack uses this to work with directories
 const path = require('path');
-
-// This is main configuration object.
-// Here you write different options and tell Webpack what to do
+const BrotliPlugin = require('brotli-webpack-plugin')
 module.exports = {
 
-  // Path to your entry point. From this file Webpack will begin his work
   entry: './index.js',
 
-  // Path and filename of your result bundle.
-  // Webpack will bundle all JavaScript into this file
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'docuhelp.js'
   },
 
-  // Default mode for Webpack is production.
-  // Depending on mode Webpack will apply different things
-  // on final bundle. For now we don't need production's JavaScript 
-  // minifying and other thing so let's set mode to development
-  mode: 'development'
+  plugins: [
+		new BrotliPlugin({
+			asset: '[path].br[query]',
+			test: /\.(js|css|html|svg)$/,
+			threshold: 10240,
+			minRatio: 0.8
+		})
+  ],
+
+  optimization: {
+		splitChunks: {
+			cacheGroups: {
+				commons: {
+					test: /[\\/]node_modules[\\/]/,
+					name: 'vendors',
+					chunks: 'all'
+				}
+			}
+		}
+	},
+
+  mode: 'production'
 };

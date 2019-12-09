@@ -1,8 +1,10 @@
-# Docuhelp
+# Docuhelp  [![GitHub issues](https://img.shields.io/github/issues/godwwinpeace22/docuhelp)](https://github.com/godwwinpeace22/docuhelp/issues) [![GitHub license](https://img.shields.io/github/license/godwwinpeace22/docuhelp)](https://github.com/godwwinpeace22/docuhelp/blob/master/LICENSE)
 
 Docuhelp is simple and beautiful knowledge Base widget in javascript that lets you write your docs in Markdown format and easily include it into your website or apps.
+
+Docuhelp is backend agnostic. You can have all your docs on the client-side without having to deal with any server or database.
 ## Demo 
-[See live demo]('https://docuhelpdemo.netlify.com')
+[See live demo](https://docuhelpdemo.netlify.com)
 ## Installation
 
 NPM
@@ -12,7 +14,7 @@ $ npm install docuhelp --save
 ```
 
 ##### CDN
-[cdn]('htts://unpkg.com/docuhelp/dist/), then include the script tags
+[cdn](htts://unpkg.com/docuhelp/dist/), then include the script tags
 
 
 ## Usage
@@ -47,7 +49,7 @@ var options = {
 var docuhelp = new DocuHelp(options)
 docuHelp.mount()
 ```
-Docuhelp uses [Fuse.js]('https://github.com/krisk/Fuse') to perform fulltext-search. Check the [documentation]('https://fusejs.io/') to learn more about the available options.
+Docuhelp uses [Fuse.js](https://github.com/krisk/Fuse) to perform fulltext-search. Check the [documentation](https://fusejs.io/) to learn more about the available options.
 
 
 ### Options
