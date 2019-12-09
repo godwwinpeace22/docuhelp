@@ -2,7 +2,6 @@
 const md = require('markdown-it')()
 const Fuse = require('fuse.js')
 const createMarkup = require('./createMarkup')
-const fs = require('fs')
 
 function DocuHelp (opts){
 
@@ -259,9 +258,6 @@ function DocuHelp (opts){
   
 }
 
-let a = fs.readFileSync('style.css')
-console.log(a.toString())
-// window.DocuHelp = DocuHelp
 module.exports = DocuHelp
 
 

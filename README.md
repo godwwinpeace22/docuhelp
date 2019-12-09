@@ -2,7 +2,7 @@
 
 Docuhelp is simple and beautiful knowledge Base widget in javascript that lets you write your docs in Markdown format and easily include it into your website or apps.
 ## Demo 
-[See live demo]('https://docuhelpdemo.netlify.com)
+[See live demo]('https://docuhelpdemo.netlify.com')
 ## Installation
 
 NPM
@@ -47,16 +47,16 @@ var options = {
 var docuhelp = new DocuHelp(options)
 docuHelp.mount()
 ```
-Docuhelp uses [Fuse.js](https://github.com/krisk/Fuse) to perform fulltext-search. Check the [documentation](https://fusejs.io/) to learn more about the available options.
+Docuhelp uses [Fuse.js]('https://github.com/krisk/Fuse') to perform fulltext-search. Check the [documentation]('https://fusejs.io/') to learn more about the available options.
 
 
 ### Options
 | option        | Type          |  description 
 | ------------- |:-------------:| -----:
-| `headerText`      | String | The text on the header |
-| `articles`   | Array       | Array of objects of the docs   |
-| `sortOptions` | Object     |       |
-| `searchOptions` | Object   |       |
+| `headerText`  | `String`     | The text on the header |
+| `articles`    | `Array`      | Array of objects of the docs   |
+| `sortOptions` | `Object`     | Sort options       |
+| `searchOptions` | `Object`   |search options   |
 
 
 ## API
