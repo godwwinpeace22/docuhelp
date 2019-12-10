@@ -1,6 +1,6 @@
 {
   "name": "docuhelp",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "self service knowledgebase software",
   "main": "dist/docuhelp.js",
   "scripts": {
